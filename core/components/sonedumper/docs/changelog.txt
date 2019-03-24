@@ -1,0 +1,6 @@
+Changelog for sOneDumper.
+
+1.0.0-beta
+==============
+- PHP 7.1
+- Import/Export MySQL backups
