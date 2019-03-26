@@ -4,6 +4,7 @@ $LNG = array(
 
 // Information about the language file
 'name'				=> 'Nederlands', // Taalnaam
+'language'        	=> 'Taal',
 
 // Toolbar
 'tbar_backup'		=> 'Exporteren',

@@ -4,6 +4,7 @@ $LNG = array(
 
 // Information about the language file
 'name'				=> 'Italiano', // Lang name
+'language'        	=> 'Lingua',
 
 // Toolbar
 'tbar_backup'		=> 'Esporta',

@@ -14,7 +14,7 @@ function sod_tpl_page()
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>{$SOD->name}</title>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="load.php?styles.v119.css">
+<link rel="stylesheet" type="text/css" href="load.php?styles.v120.css">
 <script type="text/javascript" src="load.php?main.v114.js"></script>
 <script type="text/javascript" src="load.php?{$SOD->LNG['name']}.lng.js"></script>
 <link rel="shortcut icon" href="load.php?favicon.v100.ico">
@@ -138,21 +138,24 @@ function sod_tpl_page()
                 </div>
 	        </div>
 	    </div>
-		
-		<table cellspacing="0" id="tab_services" style="display:none;">
-			<tr>
-				<td valign="top">
-					<div class="caption">{$SOD->LNG['combo_db']}</div><div id="services_db"></div>
+		<div class="container" id="tab_services" style="display:none;">
+	        <div class="row">
+	            <div class="col-lg-3 col-12">
+	                <div class="caption">{$SOD->LNG['combo_db']}</div><div id="services_db"></div>
 					<br>
 					<div class="caption">{$SOD->LNG['opt_check']}</div><div id="services_check"></div>
 					<div class="caption">{$SOD->LNG['opt_repair']}</div><div id="services_repair"></div>
-				</td>
-				<td valign="top">
-					<div class="caption">{$SOD->LNG['tree']}</div><div id=services_tree class="zTree"></div>
-				</td>
-			</tr>
-			<tr><td align="right" colspan=2><input class="btn btn-primary" type="button" value="{$SOD->LNG['btn_delete_db']}" onclick="sod.runServices('delete')" style="float:left;"> <input class="btn btn-primary" type="button" value="{$SOD->LNG['btn_check']}" onclick="sod.runServices('check')"> <input class="btn btn-primary" type="button" value="{$SOD->LNG['btn_repair']}" onclick="sod.runServices('repair')"> <input class="btn btn-primary" type="button" value="{$SOD->LNG['btn_analyze']}" onclick="sod.runServices('analyze')">  <input class="btn btn-primary" type="button" value="{$SOD->LNG['btn_optimize']}" onclick="sod.runServices('optimize')"></td></tr>
-		</table>
+	            </div>
+	            <div class="col-lg-9 col-12">
+	                <div class="caption">{$SOD->LNG['tree']}</div><div id=services_tree class="zTree"></div>
+	            </div>
+	        </div>
+	        <div class="row">
+	            <div class="col-lg-12 col-12">
+	                <input class="btn btn-primary" type="button" value="{$SOD->LNG['btn_delete_db']}" onclick="sod.runServices('delete')" style="float:left;"> <input class="btn btn-primary" type="button" value="{$SOD->LNG['btn_check']}" onclick="sod.runServices('check')"> <input class="btn btn-primary" type="button" value="{$SOD->LNG['btn_repair']}" onclick="sod.runServices('repair')"> <input class="btn btn-primary" type="button" value="{$SOD->LNG['btn_analyze']}" onclick="sod.runServices('analyze')">  <input class="btn btn-primary" type="button" value="{$SOD->LNG['btn_optimize']}" onclick="sod.runServices('optimize')">
+	            </div>
+	        </div>
+	    </div>
 		<table cellspacing="0" id="tab_options" style="display:none;">
 			<tr>
 				<td valign="top" colspan=2>
@@ -332,7 +335,7 @@ function sod_tpl_auth($error = '')
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>{$SOD->name}</title>
 <link rel="shortcut icon" href="load.php?favicon.v100.ico">
-<link rel="stylesheet" type="text/css" href="load.php?styles.v119.css">
+<link rel="stylesheet" type="text/css" href="load.php?styles.v120.css">
 </head>
 <body>
 <div class="dialog" id="dia_auth">
@@ -359,7 +362,7 @@ function sod_tpl_auth($error = '')
 							<td><label><input type="checkbox" name="save" value="1"{$_POST['save']}> {$SOD->LNG['auth_remember']}</label></td>
 						</tr>
 						<tr>
-							<td>Language:</td>
+							<td>{$SOD->LNG['language']}:</td>
 							<td><select type="text" name="lang" style="width:198px;" onChange="this.form.submit();">{$SOD->lng_list}</select></td>
 						</tr>
 					</table>

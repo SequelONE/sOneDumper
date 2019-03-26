@@ -4,6 +4,7 @@ $LNG = array(
 
 // Information about the language file
 'name'				=> 'Polish', // Lang name
+'language'          => 'Język',
 
 // Toolbar
 'tbar_backup'		=> 'Export',

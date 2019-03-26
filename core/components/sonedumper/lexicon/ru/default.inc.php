@@ -2,7 +2,7 @@
 include_once 'setting.inc.php';
 
 $_lang['sonedumper'] = 'sOneDumper';
-$_lang['sonedumper_menu_desc'] = 'Пример расширения для разработки.';
+$_lang['sonedumper_menu_desc'] = 'Резервное копирование';
 $_lang['sonedumper_intro_msg'] = 'Вы можете выделять сразу несколько предметов при помощи Shift или Ctrl.';
 
 $_lang['sonedumper_items'] = 'Предметы';
